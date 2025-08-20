@@ -43,7 +43,7 @@ export default function Footer() {
         >
           <div className="flex items-center justify-center space-x-4 mb-6">
             <div className="relative">
-              <div className="bg-blue-600 p-4 rounded-2xl shadow-lg">
+              <div className="bg-gradient-to-r from-emerald-600 to-teal-600 p-4 rounded-2xl shadow-lg">
                 <Calculator className="h-10 w-10 text-white" />
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Footer() {
             whileHover={{ y: -5 }}
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-blue-600 rounded-lg">
+              <div className="p-2 bg-emerald-600 rounded-lg">
                 <Building className="h-5 w-5 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white">
@@ -82,7 +82,7 @@ export default function Footer() {
                   <div key={index} className="flex items-start space-x-3 group">
                     {IconComponent && (
                       <div className="flex-shrink-0 mt-1">
-                        <IconComponent className="h-4 w-4 text-blue-400" />
+                        <IconComponent className="h-4 w-4 text-emerald-400" />
                       </div>
                     )}
                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -104,7 +104,7 @@ export default function Footer() {
             whileHover={{ y: -5 }}
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-indigo-600 rounded-lg">
+              <div className="p-2 bg-emerald-600 rounded-lg">
                 <Shield className="h-5 w-5 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white">
@@ -118,7 +118,7 @@ export default function Footer() {
                   <div key={index} className="flex items-start space-x-3 group">
                     {IconComponent && (
                       <div className="flex-shrink-0 mt-1">
-                        <IconComponent className="h-4 w-4 text-indigo-400" />
+                        <IconComponent className="h-4 w-4 text-emerald-400" />
                       </div>
                     )}
                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -140,7 +140,7 @@ export default function Footer() {
             whileHover={{ y: -5 }}
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-purple-600 rounded-lg">
+              <div className="p-2 bg-emerald-600 rounded-lg">
                 <Phone className="h-5 w-5 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white">
@@ -153,7 +153,7 @@ export default function Footer() {
                 return (
                   <div key={index} className="flex items-start space-x-3 group">
                     <div className="flex-shrink-0 mt-1">
-                      <IconComponent className="h-4 w-4 text-purple-400" />
+                      <IconComponent className="h-4 w-4 text-emerald-400" />
                     </div>
                     {info.href ? (
                       <a 
@@ -183,7 +183,7 @@ export default function Footer() {
             whileHover={{ y: -5 }}
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-green-600 rounded-lg">
+              <div className="p-2 bg-emerald-600 rounded-lg">
                 <ArrowUp className="h-5 w-5 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white">
@@ -220,7 +220,7 @@ export default function Footer() {
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-center text-blue-200 text-sm">
+            <p className="text-center text-emerald-200 text-sm">
               &copy; 2024 Numerics Co. d.o.o. {t('allRightsReserved')}
             </p>
             <div className="flex items-center space-x-6">

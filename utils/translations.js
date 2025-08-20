@@ -46,9 +46,10 @@ export const translations = {
     // About Section
     aboutCompany: "O našoj tvrtki",
     aboutUs: "O nama",
-    aboutDescription1: "Mi smo digitalna računovodstvena tvrtka. Radimo bezpapirno i bez komplikacija.",
-    aboutDescription2: "Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
-    aboutDescription3: "Naš tim se sastoji od zaposlenika s raznolikim znanjem, vještinama i godinama iskustva.",
+    aboutDescription: "Mi smo digitalna računovodstvena tvrtka koja radi bezpapirno i bez komplikacija. Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
+    aboutText1: "Mi smo digitalna računovodstvena tvrtka. Radimo bezpapirno i bez komplikacija.",
+    aboutText2: "Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
+    aboutText3: "Naš tim se sastoji od zaposlenika s raznolikim znanjem, vještinama i godinama iskustva.",
     
     digitalFirst: "Digitalno prvo",
     digitalFirstDesc: "Potpuno bezpapirno poslovanje za maksimalnu efikasnost",
@@ -171,9 +172,10 @@ export const translations = {
     // About Section
     aboutCompany: "About Our Company",
     aboutUs: "About Us",
-    aboutDescription1: "We are a digital accounting office. We work paperless and without complications.",
-    aboutDescription2: "We cooperate with clients in a simple way and speak in understandable terms.",
-    aboutDescription3: "Our team consists of employees with diverse knowledge, skills, and years of experience.",
+    aboutDescription: "We are a digital accounting office that works paperless and without complications. We cooperate with clients in a simple way and speak in understandable terms.",
+    aboutText1: "We are a digital accounting office. We work paperless and without complications.",
+    aboutText2: "We cooperate with clients in a simple way and speak in understandable terms.",
+    aboutText3: "Our team consists of employees with diverse knowledge, skills, and years of experience.",
     
     digitalFirst: "Digital First",
     digitalFirstDesc: "Fully paperless operations for maximum efficiency",
@@ -187,7 +189,7 @@ export const translations = {
     yearsExperience: "Years of Experience",
     
     // Careers Section
-    joinTeam: "Join Our Team",
+    joinOurTeam: "Join Our Team",
     careers: "Careers",
     careersDescription: "If you would like to work with us, send us an open job application with the reason why you would like to join our team, together with your CV. You will receive a quick response.",
     sendApplication: "Send Application",

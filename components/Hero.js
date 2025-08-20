@@ -56,7 +56,7 @@ export default function Hero() {
 
       {/* Floating Icons */}
       <motion.div
-        className="absolute top-20 left-10 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-blue-100"
+        className="absolute top-20 left-10 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
         animate={{
           y: [0, -20, 0],
           rotate: [0, 10, 0],
@@ -67,11 +67,11 @@ export default function Hero() {
           ease: "easeInOut"
         }}
       >
-        <Calculator className="h-6 w-6 text-blue-600" />
+        <Calculator className="h-6 w-6 text-emerald-600" />
       </motion.div>
       
       <motion.div
-        className="absolute top-40 right-16 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-indigo-100"
+        className="absolute top-40 right-16 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
         animate={{
           y: [0, 15, 0],
           rotate: [0, -8, 0],
@@ -83,11 +83,11 @@ export default function Hero() {
           delay: 2
         }}
       >
-        <Globe className="h-6 w-6 text-indigo-600" />
+        <Globe className="h-6 w-6 text-emerald-600" />
       </motion.div>
 
       <motion.div
-        className="absolute bottom-32 left-20 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-purple-100"
+        className="absolute bottom-32 left-20 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
         animate={{
           y: [0, -25, 0],
           rotate: [0, 12, 0],
@@ -99,7 +99,7 @@ export default function Hero() {
           delay: 4
         }}
       >
-        <Shield className="h-6 w-6 text-purple-600" />
+        <Shield className="h-6 w-6 text-emerald-600" />
       </motion.div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 md:pt-20">
@@ -120,9 +120,9 @@ export default function Hero() {
               animate={{ rotate: 360 }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
             >
-              <Sparkles className="h-5 w-5 text-blue-600" />
+              <Sparkles className="h-5 w-5 text-emerald-600" />
             </motion.div>
-            <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-sm font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               {t('professionalServices')}
             </span>
           </motion.div>
@@ -134,7 +134,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <span className="bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-900 via-teal-800 to-cyan-900 bg-clip-text text-transparent">
               {t('digitalAccounting')}
             </span>
           </motion.h1>
@@ -147,7 +147,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             {t('heroSubtitle')}{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent font-semibold">
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent font-semibold">
               {t('heroDescription')}
             </span>
           </motion.p>
@@ -161,18 +161,18 @@ export default function Hero() {
           >
             <motion.button 
               onClick={() => scrollToSection('services')}
-              className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-5 rounded-2xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center space-x-3 shadow-xl hover:shadow-2xl"
+              className="group relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-5 rounded-2xl font-semibold hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 flex items-center space-x-3 shadow-xl hover:shadow-2xl"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
               <span className="relative">{t('exploreServices')}</span>
               <ArrowRight className="relative h-5 w-5 group-hover:translate-x-2 transition-transform" />
             </motion.button>
 
             <motion.button 
               onClick={() => scrollToSection('contact')}
-              className="group relative bg-white/90 backdrop-blur-sm text-gray-900 px-10 py-5 rounded-2xl font-semibold border-2 border-gray-200/50 hover:border-blue-300/50 transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl"
+              className="group relative bg-white/90 backdrop-blur-sm text-gray-900 px-10 py-5 rounded-2xl font-semibold border-2 border-gray-200/50 hover:border-emerald-300/50 transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -189,9 +189,9 @@ export default function Hero() {
             transition={{ delay: 0.9, duration: 0.8 }}
           >
             {[
-              { number: '100%', label: t('digitalProcess'), icon: Zap, gradient: 'from-blue-500 to-cyan-500' },
-              { number: '24/7', label: t('supportAvailable'), icon: Shield, gradient: 'from-indigo-500 to-purple-500' },
-              { number: '0', label: t('paperRequired'), icon: TrendingUp, gradient: 'from-purple-500 to-pink-500' }
+              { number: '100%', label: t('digitalProcess'), icon: Zap, gradient: 'from-emerald-500 to-teal-500' },
+              { number: '24/7', label: t('supportAvailable'), icon: Shield, gradient: 'from-emerald-600 to-cyan-600' },
+              { number: '0', label: t('paperRequired'), icon: TrendingUp, gradient: 'from-teal-500 to-emerald-500' }
             ].map((stat, index) => {
               const IconComponent = stat.icon;
               return (

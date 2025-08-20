@@ -130,21 +130,21 @@ export default function Contact() {
       label: t('email'),
       value: "info@numerics.hr",
       href: "mailto:info@numerics.hr",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-emerald-500 to-teal-500"
     },
     {
       icon: Phone,
       label: t('phone'),
       value: "+385 98 250 920",
       href: "tel:+385982509200",
-      gradient: "from-indigo-500 to-purple-500"
+      gradient: "from-emerald-600 to-cyan-600"
     },
     {
       icon: MapPin,
       label: t('address'),
       value: "Međimurska ulica 19\n42000 Varaždin, Croatia",
       href: null,
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-teal-500 to-emerald-500"
     }
   ];
 
@@ -159,17 +159,17 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 mb-6"
+            className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <span className="text-sm font-medium text-blue-700">{t('getInTouchSection')}</span>
+            <span className="text-sm font-medium text-emerald-700">{t('getInTouchSection')}</span>
           </motion.div>
           
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-blue-900">
+            <span className="text-emerald-900">
               {t('contactUs')}
             </span>
           </h2>
@@ -210,7 +210,7 @@ export default function Contact() {
                         {info.href ? (
                           <a 
                             href={info.href} 
-                            className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                            className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
                           >
                             {info.value}
                           </a>
@@ -237,7 +237,7 @@ export default function Contact() {
             >
               <div className="p-4 bg-gray-50 border-b border-gray-200">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-blue-600" />
+                  <MapPin className="h-5 w-5 text-emerald-600" />
                   <span className="font-medium text-gray-900">{t('ourLocation')}</span>
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900"
                   />
                 </div>
 
@@ -294,7 +294,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900"
                   />
                 </div>
 
@@ -325,7 +325,7 @@ export default function Contact() {
                 />
 
                 {/* Enhanced Math CAPTCHA */}
-                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-lg border border-emerald-200">
                   <div className="flex items-center justify-between mb-3">
                     <label className="block text-sm font-medium text-gray-700">
                       {t('verificationQuestion')} {captchaQuestion.question} = ?
@@ -333,7 +333,7 @@ export default function Contact() {
                     <button
                       type="button"
                       onClick={generateCaptcha}
-                      className="text-xs text-blue-600 hover:text-blue-800 underline"
+                      className="text-xs text-emerald-600 hover:text-emerald-800 underline"
                     >
                       {t('newQuestion') || 'New Question'}
                     </button>
@@ -345,7 +345,7 @@ export default function Contact() {
                       value={formData.mathCaptcha || ''}
                       onChange={handleChange}
                       required
-                      className="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none text-gray-900 font-medium"
+                      className="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900 font-medium"
                       placeholder="?"
                     />
                     <span className="text-sm text-gray-600">
@@ -377,7 +377,7 @@ export default function Contact() {
                 <motion.button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-emerald-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

@@ -11,9 +11,9 @@ export default function Services() {
       icon: Calculator,
       title: t('accountingBookkeeping'),
       description: t('accountingDescription'),
-      gradient: "from-blue-600 via-blue-700 to-indigo-800",
-      iconBg: "bg-blue-100",
-      iconColor: "text-blue-600"
+      gradient: "from-emerald-600 via-teal-700 to-cyan-800",
+      iconBg: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     },
     {
       icon: Building,
@@ -27,31 +27,31 @@ export default function Services() {
       icon: TrendingUp,
       title: t('businessConsulting'),
       description: t('businessConsultingDescription'),
-      gradient: "from-purple-600 via-violet-700 to-indigo-800",
-      iconBg: "bg-purple-100",
-      iconColor: "text-purple-600"
+      gradient: "from-emerald-600 via-teal-700 to-cyan-800",
+      iconBg: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     },
     {
       icon: FileText,
       title: t('administrativeServices'),
       description: t('administrativeDescription'),
-      gradient: "from-orange-600 via-red-600 to-pink-700",
-      iconBg: "bg-orange-100",
-      iconColor: "text-orange-600"
+      gradient: "from-emerald-600 via-teal-700 to-cyan-800",
+      iconBg: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     }
   ];
 
   return (
     <section id="services" className="relative py-32 overflow-hidden">
       {/* Dramatic Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900"></div>
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
       </div>
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-teal-400/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,7 +70,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <Sparkles className="h-5 w-5 text-yellow-400" />
+            <Sparkles className="h-5 w-5 text-emerald-400" />
             <span className="text-sm font-medium text-white">{t('professionalServices')}</span>
           </motion.div>
           
@@ -85,7 +85,7 @@ export default function Services() {
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl text-emerald-100 max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -162,7 +162,7 @@ export default function Services() {
               {t('servicesDescription')}
             </p>
             <motion.button
-              className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors inline-flex items-center space-x-2"
+              className="bg-white text-emerald-900 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
