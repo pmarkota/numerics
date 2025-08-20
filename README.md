@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Numerics - Digital Accounting Website
+
+A modern, responsive one-page website for Numerics accounting firm built with Next.js 14, featuring multilingual support, animations, and a functional contact form.
+
+## Features
+
+- Modern, light-themed design with gradients and animations
+- Multilingual support (Croatian/English) with language switcher
+- Fully responsive design
+- Smooth scrolling navigation
+- Functional contact form with CAPTCHA verification
+- Email sending functionality
+- Professional icons from Lucide React
+- Framer Motion animations
+- Glassmorphism effects
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **CAPTCHA**: hCaptcha
+- **Email**: Nodemailer
+- **Language**: React Context for i18n
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create environment variables file `.env.local`:
+```env
+# Email Configuration (Gmail recommended)
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+CONTACT_EMAIL=contact@numerics.hr
+
+# hCaptcha Configuration
+HCAPTCHA_SECRET_KEY=your-hcaptcha-secret-key
+NEXT_PUBLIC_HCAPTCHA_SITE_KEY=your-hcaptcha-site-key
+```
+
+### Email Setup (Gmail)
+
+1. Enable 2-factor authentication on your Gmail account
+2. Generate an App Password:
+   - Go to Google Account settings
+   - Security → 2-Step Verification → App passwords
+   - Generate password for "Mail"
+   - Use this password in `EMAIL_PASS`
+
+### CAPTCHA Setup (hCaptcha)
+
+1. Sign up at [hCaptcha.com](https://hcaptcha.com)
+2. Create a new site
+3. Get your Site Key and Secret Key
+4. Add them to your environment variables
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── api/contact/          # Contact form API endpoint
+│   ├── globals.css           # Global styles
+│   ├── layout.js            # Root layout with language provider
+│   └── page.js              # Main page component
+├── components/              # React components
+│   ├── About.js
+│   ├── Careers.js
+│   ├── Contact.js           # Contact form with CAPTCHA
+│   ├── CookieConsent.js
+│   ├── Footer.js
+│   ├── Hero.js
+│   ├── Navbar.js            # Navigation with language switcher
+│   └── Services.js          # Redesigned services section
+├── contexts/
+│   └── LanguageContext.js   # Language context provider
+├── utils/
+│   └── translations.js      # Translation strings
+└── docs/                    # Project documentation
+```
 
-## Learn More
+## Sections
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero** - Main banner with animated elements and CTA buttons
+2. **Services** - Four main services with modern card design
+3. **About** - Company information with feature highlights
+4. **Careers** - Job opportunities and application process
+5. **Contact** - Contact form with CAPTCHA and company info
+6. **Footer** - Company details and navigation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Translations
 
-## Deploy on Vercel
+Edit `utils/translations.js` to add new translation keys:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```javascript
+export const translations = {
+  hr: {
+    newKey: "Croatian text"
+  },
+  en: {
+    newKey: "English text"
+  }
+};
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Styling
+
+The project uses Tailwind CSS. Modify component classes or extend the theme in `tailwind.config.js`.
+
+### Contact Form
+
+The contact form sends emails via the `/api/contact` endpoint. Customize the email template in `app/api/contact/route.js`.
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy
+
+### Other Platforms
+
+Ensure your hosting platform supports:
+- Node.js 18+
+- Environment variables
+- API routes
+
+## Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `EMAIL_USER` | Gmail address for sending emails | Yes |
+| `EMAIL_PASS` | Gmail app password | Yes |
+| `CONTACT_EMAIL` | Recipient email address | Optional |
+| `HCAPTCHA_SECRET_KEY` | hCaptcha secret key | Yes |
+| `NEXT_PUBLIC_HCAPTCHA_SITE_KEY` | hCaptcha site key | Yes |
+
+## Support
+
+For issues or questions, contact the development team or refer to the project documentation in the `docs/` folder.
+
+## License
+
+ 2024 Numerics Co. d.o.o. All rights reserved.
