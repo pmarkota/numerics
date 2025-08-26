@@ -149,8 +149,19 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-32 overflow-hidden">
+      {/* Dark Background matching Hero section */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+      </div>
+      
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-teal-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
@@ -158,22 +169,10 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            <span className="text-sm font-medium text-emerald-700">{t('getInTouchSection')}</span>
-          </motion.div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-emerald-900">
-              {t('contactUs')}
-            </span>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+            {t('contactUs')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
             {t('contactDescription')}
           </p>
         </motion.div>
@@ -194,7 +193,7 @@ export default function Contact() {
                 return (
                   <motion.div 
                     key={index}
-                    className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300"
+                    className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -206,16 +205,16 @@ export default function Contact() {
                         <IconComponent className="h-6 w-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{info.label}</h3>
+                        <h3 className="text-lg font-semibold text-white mb-2">{info.label}</h3>
                         {info.href ? (
                           <a 
                             href={info.href} 
-                            className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
+                            className="text-emerald-100 hover:text-emerald-300 transition-colors font-medium"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <p className="text-gray-700 whitespace-pre-line font-medium">
+                          <p className="text-emerald-100 whitespace-pre-line font-medium">
                             {info.value}
                           </p>
                         )}
@@ -227,18 +226,38 @@ export default function Contact() {
             </div>
 
 
+            {/* Legal Information Card */}
+            <motion.div 
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <h3 className="text-xl font-bold text-emerald-400 mb-6">{t('legalData')}</h3>
+              <div className="space-y-3 text-white">
+                <p className="font-semibold">{t('companyName')}</p>
+                <p>{t('companyAddress')}</p>
+                <p>{t('companyCity')}</p>
+                <p className="text-emerald-100">{t('companyOIB')}</p>
+                <p className="text-emerald-100 leading-relaxed">{t('companyRegistry')}</p>
+                <p className="text-emerald-100 leading-relaxed">{t('companyCapital')}</p>
+                <p className="text-emerald-100 leading-relaxed break-all">{t('companyIBAN')}</p>
+              </div>
+            </motion.div>
+
             {/* Enhanced Google Maps Embed */}
             <motion.div 
-              className="relative bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200"
+              className="relative bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <div className="p-4 bg-gray-50 border-b border-gray-200">
+              <div className="p-4 bg-white/5 border-b border-white/20">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-emerald-600" />
-                  <span className="font-medium text-gray-900">{t('ourLocation')}</span>
+                  <MapPin className="h-5 w-5 text-emerald-400" />
+                  <span className="font-medium text-white">{t('ourLocation')}</span>
                 </div>
               </div>
               <div className="h-64">
@@ -258,20 +277,19 @@ export default function Contact() {
 
           {/* Contact Form */}
           <motion.div
-            className="relative"
+            className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 h-fit"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('sendMessage')}</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    {t('fullName')}
-                  </label>
+            <h3 className="text-2xl font-bold text-white mb-6">{t('sendMessage')}</h3>
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                  {t('name')} *
+                </label>
                   <input
                     type="text"
                     id="name"
@@ -279,12 +297,12 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900"
+                    className="w-full px-4 py-3 bg-white/90 border border-white/30 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 transition-colors outline-none text-gray-900"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     {t('email')} *
                   </label>
                   <input
@@ -294,12 +312,12 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900"
+                    className="w-full px-4 py-3 bg-white/90 border border-white/30 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 transition-colors outline-none text-gray-900"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                     {t('message')} *
                   </label>
                   <textarea
@@ -309,7 +327,7 @@ export default function Contact() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none outline-none text-gray-900"
+                    className="w-full px-4 py-3 bg-white/90 border border-white/30 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 transition-colors resize-none outline-none text-gray-900"
                   />
                 </div>
 
@@ -325,15 +343,15 @@ export default function Contact() {
                 />
 
                 {/* Enhanced Math CAPTCHA */}
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-lg border border-emerald-200">
+                <div className="bg-white/5 p-6 rounded-lg border border-white/20">
                   <div className="flex items-center justify-between mb-3">
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t('verificationQuestion')} {captchaQuestion.question} = ?
+                    <label className="block text-sm font-medium text-white">
+                      {t('verificationQuestion') || 'Verification'}: {captchaQuestion.question} = ?
                     </label>
                     <button
                       type="button"
                       onClick={generateCaptcha}
-                      className="text-xs text-emerald-600 hover:text-emerald-800 underline"
+                      className="text-xs text-emerald-300 hover:text-emerald-100 underline"
                     >
                       {t('newQuestion') || 'New Question'}
                     </button>
@@ -345,10 +363,10 @@ export default function Contact() {
                       value={formData.mathCaptcha || ''}
                       onChange={handleChange}
                       required
-                      className="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors outline-none text-gray-900 font-medium"
+                      className="w-24 px-3 py-2 bg-white/90 border border-white/30 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 transition-colors outline-none text-gray-900 font-medium"
                       placeholder="?"
                     />
-                    <span className="text-sm text-gray-600">
+                    <span className="text-sm text-emerald-100">
                       {t('captchaHelp') || 'Solve to verify you\'re human'}
                     </span>
                   </div>
@@ -385,7 +403,6 @@ export default function Contact() {
                   <span>{isSubmitting ? (t('sending') || 'Sending...') : t('sendMessage')}</span>
                 </motion.button>
               </form>
-            </div>
           </motion.div>
         </div>
       </div>

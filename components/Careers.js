@@ -21,17 +21,6 @@ export default function Careers() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            <Sparkles className="h-5 w-5 text-emerald-400" />
-            <span className="text-sm font-medium text-emerald-700">{t('joinTeam')}</span>
-          </motion.div>
-          
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-emerald-900 via-teal-800 to-cyan-900 bg-clip-text text-transparent">{t('careers')}</span>
           </h2>
@@ -104,30 +93,36 @@ export default function Careers() {
             {/* Application Process */}
             <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-2xl border border-emerald-200">
               <h4 className="text-xl font-bold text-emerald-900 mb-6">{t('applicationProcess')}</h4>
-              <div className="space-y-4">
-                {[
-                  { step: '1', title: t('sendApplication'), desc: t('sendApplicationDesc') },
-                  { step: '2', title: t('quickReview'), desc: t('quickReviewDesc') },
-                  { step: '3', title: t('interview'), desc: t('interviewDesc') },
-                  { step: '4', title: t('welcome'), desc: t('welcomeDesc') }
-                ].map((item, index) => (
-                  <motion.div 
-                    key={index}
-                    className="flex items-start space-x-4"
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1, duration: 0.6 }}
-                  >
-                    <div className="bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
-                      {item.step}
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-emerald-900">{item.title}</h5>
-                      <p className="text-emerald-700 text-sm">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
+              <div className="space-y-6">
+                <motion.p 
+                  className="text-emerald-800 leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1, duration: 0.6 }}
+                >
+                  {t('careersDescription')}
+                </motion.p>
+                
+                <motion.p 
+                  className="text-emerald-800 leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2, duration: 0.6 }}
+                >
+                  {t('careersDescription2')}
+                </motion.p>
+                
+                <motion.p 
+                  className="text-emerald-900 font-semibold leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.6 }}
+                >
+                  {t('careersDescription3')}
+                </motion.p>
               </div>
             </div>
 

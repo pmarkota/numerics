@@ -56,141 +56,82 @@ export default function Footer() {
           </p>
         </motion.div>
 
-        {/* Enhanced Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {/* Company Info Card */}
+        {/* Enhanced Content Grid - 2 Card Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 max-w-4xl mx-auto">
+
+          {/* Contact Info Card */}
           <motion.div
-            className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
+            className="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.6 }}
             whileHover={{ y: -5 }}
           >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-emerald-600 rounded-lg">
-                <Building className="h-5 w-5 text-white" />
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="p-3 bg-emerald-600 rounded-lg">
+                <Phone className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-white">
-                {t('companyInformation')}
-              </h3>
-            </div>
-            <div className="space-y-3">
-              {companyInfo.map((info, index) => {
-                const IconComponent = info.icon;
-                return (
-                  <div key={index} className="flex items-start space-x-3 group">
-                    {IconComponent && (
-                      <div className="flex-shrink-0 mt-1">
-                        <IconComponent className="h-4 w-4 text-emerald-400" />
-                      </div>
-                    )}
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {info.text}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </motion.div>
-
-          {/* Legal Details Card */}
-          <motion.div
-            className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            whileHover={{ y: -5 }}
-          >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-emerald-600 rounded-lg">
-                <Shield className="h-5 w-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white">
-                {t('legalInformation')}
-              </h3>
-            </div>
-            <div className="space-y-3">
-              {legalInfo.map((info, index) => {
-                const IconComponent = info.icon;
-                return (
-                  <div key={index} className="flex items-start space-x-3 group">
-                    {IconComponent && (
-                      <div className="flex-shrink-0 mt-1">
-                        <IconComponent className="h-4 w-4 text-emerald-400" />
-                      </div>
-                    )}
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {info.text}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </motion.div>
-
-          {/* Contact Info Card */}
-          <motion.div
-            className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            whileHover={{ y: -5 }}
-          >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-emerald-600 rounded-lg">
-                <Phone className="h-5 w-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white">
+              <h3 className="text-xl font-bold text-white">
                 {t('contactInformation')}
               </h3>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-6">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
                 return (
-                  <div key={index} className="flex items-start space-x-3 group">
+                  <div key={index} className="flex items-start space-x-4 group">
                     <div className="flex-shrink-0 mt-1">
-                      <IconComponent className="h-4 w-4 text-emerald-400" />
+                      <IconComponent className="h-5 w-5 text-emerald-400" />
                     </div>
                     {info.href ? (
                       <a 
                         href={info.href} 
-                        className="text-gray-300 hover:text-white transition-colors text-sm hover:underline"
+                        className="text-gray-300 hover:text-white transition-colors text-base hover:underline"
                       >
                         {info.text}
                       </a>
                     ) : (
-                      <p className="text-gray-300 text-sm">
+                      <p className="text-gray-300 text-base">
                         {info.text}
                       </p>
                     )}
                   </div>
                 );
               })}
+              
+              {/* Company Address */}
+              <div className="flex items-start space-x-4 group pt-4 border-t border-gray-700">
+                <div className="flex-shrink-0 mt-1">
+                  <MapPin className="h-5 w-5 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="text-gray-300 text-base">Numerics Co. d.o.o.</p>
+                  <p className="text-gray-300 text-base">Međimurska ulica 19</p>
+                  <p className="text-gray-300 text-base">42000 Varaždin, Croatia</p>
+                </div>
+              </div>
             </div>
           </motion.div>
 
           {/* Quick Links Card */}
           <motion.div
-            className="bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
+            className="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
             whileHover={{ y: -5 }}
           >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-emerald-600 rounded-lg">
-                <ArrowUp className="h-5 w-5 text-white" />
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="p-3 bg-emerald-600 rounded-lg">
+                <ArrowUp className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-white">
+              <h3 className="text-xl font-bold text-white">
                 Quick Links
               </h3>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {[
                 { name: t('home'), href: '#home' },
                 { name: t('services'), href: '#services' },
@@ -201,7 +142,7 @@ export default function Footer() {
                 <motion.button
                   key={index}
                   onClick={() => document.getElementById(link.href.slice(1))?.scrollIntoView({ behavior: 'smooth' })}
-                  className="block text-gray-300 hover:text-white transition-colors text-sm text-left hover:underline"
+                  className="block text-gray-300 hover:text-white transition-colors text-base text-left hover:underline w-full"
                   whileHover={{ x: 5 }}
                 >
                   {link.name}
@@ -221,7 +162,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-center text-emerald-200 text-sm">
-              &copy; 2024 Numerics Co. d.o.o. {t('allRightsReserved')}
+              &copy; 2025 Numerics Co. d.o.o. {t('allRightsReserved')}
             </p>
             <div className="flex items-center space-x-6">
               <motion.button

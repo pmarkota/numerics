@@ -10,7 +10,17 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Dramatic Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+      </div>
+      
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-teal-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -54,53 +64,6 @@ export default function Hero() {
         />
       </div>
 
-      {/* Floating Icons */}
-      <motion.div
-        className="absolute top-20 left-10 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
-        animate={{
-          y: [0, -20, 0],
-          rotate: [0, 10, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <Calculator className="h-6 w-6 text-emerald-600" />
-      </motion.div>
-      
-      <motion.div
-        className="absolute top-40 right-16 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
-        animate={{
-          y: [0, 15, 0],
-          rotate: [0, -8, 0],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2
-        }}
-      >
-        <Globe className="h-6 w-6 text-emerald-600" />
-      </motion.div>
-
-      <motion.div
-        className="absolute bottom-32 left-20 p-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-emerald-100"
-        animate={{
-          y: [0, -25, 0],
-          rotate: [0, 12, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 4
-        }}
-      >
-        <Shield className="h-6 w-6 text-emerald-600" />
-      </motion.div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 md:pt-20">
         <motion.div 
@@ -109,45 +72,26 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Enhanced Badge */}
-          <motion.div
-            className="inline-flex items-center space-x-3 bg-white/90 backdrop-blur-sm border border-blue-200/50 rounded-full px-6 py-3 mb-8 shadow-lg"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-            >
-              <Sparkles className="h-5 w-5 text-emerald-600" />
-            </motion.div>
-            <span className="text-sm font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              {t('professionalServices')}
-            </span>
-          </motion.div>
 
           {/* Enhanced Main Heading */}
           <motion.h1 
-            className="text-6xl md:text-8xl font-bold mb-6 leading-tight"
+            className="text-6xl md:text-8xl font-bold mb-6 leading-tight text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <span className="bg-gradient-to-r from-emerald-900 via-teal-800 to-cyan-900 bg-clip-text text-transparent">
-              {t('digitalAccounting')}
-            </span>
+            {t('digitalAccounting')}
           </motion.h1>
 
           {/* Enhanced Subtitle */}
           <motion.p 
-            className="text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-emerald-100 mb-12 max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             {t('heroSubtitle')}{' '}
-            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent font-semibold">
+            <span className="text-emerald-400 font-semibold">
               {t('heroDescription')}
             </span>
           </motion.p>
@@ -172,7 +116,7 @@ export default function Hero() {
 
             <motion.button 
               onClick={() => scrollToSection('contact')}
-              className="group relative bg-white/90 backdrop-blur-sm text-gray-900 px-10 py-5 rounded-2xl font-semibold border-2 border-gray-200/50 hover:border-emerald-300/50 transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl"
+              className="group relative bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-semibold border-2 border-white/20 hover:border-emerald-300/50 transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -181,54 +125,6 @@ export default function Hero() {
             </motion.button>
           </motion.div>
 
-          {/* Enhanced Stats with Better Design */}
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16 md:mb-0"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.8 }}
-          >
-            {[
-              { number: '100%', label: t('digitalProcess'), icon: Zap, gradient: 'from-emerald-500 to-teal-500' },
-              { number: '24/7', label: t('supportAvailable'), icon: Shield, gradient: 'from-emerald-600 to-cyan-600' },
-              { number: '0', label: t('paperRequired'), icon: TrendingUp, gradient: 'from-teal-500 to-emerald-500' }
-            ].map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <motion.div 
-                  key={index}
-                  className="relative group"
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9 + index * 0.1, duration: 0.6, type: "spring", stiffness: 300 }}
-                >
-                  <div className="relative bg-white/90 backdrop-blur-sm p-8 rounded-3xl border border-gray-200/50 shadow-lg group-hover:shadow-2xl transition-all duration-300 overflow-hidden">
-                    {/* Background Gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${stat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
-                    
-                    {/* Icon */}
-                    <div className="relative mb-4 mx-auto w-fit">
-                      <div className={`inline-flex p-4 bg-gradient-to-r ${stat.gradient} rounded-2xl shadow-lg`}>
-                        <IconComponent className="h-6 w-6 text-white" />
-                      </div>
-                    </div>
-                    
-                    {/* Number */}
-                    <div className={`text-4xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-3`}>
-                      {stat.number}
-                    </div>
-                    
-                    {/* Label */}
-                    <div className="text-gray-700 font-semibold text-lg">{stat.label}</div>
-                    
-                    {/* Decorative Elements */}
-                    <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-r from-blue-400/10 to-indigo-400/10 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
         </motion.div>
       </div>
     </section>

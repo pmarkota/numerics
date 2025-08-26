@@ -77,7 +77,7 @@ export default function Navbar() {
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="relative px-4 py-2 text-gray-700 hover:text-emerald-900 font-medium transition-colors group"
+                  className="relative px-4 py-2 text-gray-700 hover:text-emerald-900 font-bold transition-colors group"
                   whileHover={{ y: -2 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ export default function Navbar() {
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-emerald-900 hover:bg-emerald-50 rounded-lg font-medium transition-colors"
+                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-emerald-900 hover:bg-emerald-50 rounded-lg font-bold transition-colors"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}

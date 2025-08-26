@@ -2,17 +2,17 @@ export const translations = {
   hr: {
     // Navigation
     home: "Početna",
-    services: "Usluge",
+    services: "Usluge koje nudimo",
     aboutUs: "O nama",
-    careers: "Karijere",
+    careers: "Zapošljavanje",
     joinTeam: "Pridružite se timu",
     contact: "Kontakt",
     
     // Hero Section
     digitalAccounting: "Digitalno računovodstvo",
-    heroSubtitle: "Bezpapirno i jednostavno vođenje knjiga.",
-    heroDescription: "Pojednostavite svoj posao s našim modernim računovodstvenim rješenjima.",
-    exploreServices: "Istražite usluge",
+    heroSubtitle: "Knjigovodstvo bez papira i bez kompliciranja.",
+    heroDescription: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja. Fiskalizacija 2.0 i eRačun – savjetovanje i pomoć oko uvođenja u Vaše poslovanje. ",
+    exploreServices: "Usluge koje nudimo",
     getInTouch: "Kontaktirajte nas",
     
     // Stats
@@ -24,21 +24,20 @@ export const translations = {
     professionalServices: "Profesionalne usluge",
     ourServices: "Naše usluge",
     servicesDescription: "Pružamo sveobuhvatne računovodstvene i poslovne usluge kako bismo pomogli vašoj tvrtki da napreduje u digitalnom dobu.",
-    services: 'Usluge',
-    accountingBookkeeping: 'Računovodstvo i Knjiženje',
-    accountingDescription: 'Potpuno upravljanje vašim financijskim zapisima s preciznošću i usklađenošću s propisima.',
+    accountingBookkeeping: 'Knjigovodstvo i računovodstvo',
+    accountingDescription: 'Knjigovodstvena obrada sve poslovne dokumentacije. Računovodstveno izvještavanje i analiza Vaših brojeva.',
     taxConsulting: 'Porezno Savjetovanje',
     taxDescription: 'Stručno porezno planiranje i savjetovanje za optimizaciju vaših poreznih obveza.',
     businessConsulting: 'Poslovno Savjetovanje',
-    businessConsultingDescription: 'Strateški uvidi i savjeti za rast i uspjeh vašeg poslovanja.',
+    businessConsultingDescription: 'Otvaranje i zatvaranje poduzeća ili obrta. Analiza i unaprijeđenje poslovnih procesa. Financijsko savjetovanje.',
     learnMore: 'Saznaj više',
     readyToStart: 'Spremni za početak?',
     
-    businessFormation: "Osnivanje tvrtki",
-    businessFormationDescription: "Stručno vodstvo kroz proces osnivanja vašeg poslovnog subjekta. Pomažemo s svim pravnim zahtjevima i dokumentacijom za osnivanje tvrtke.",
+    businessFormation: "Fiskalizacija 2.0 i eRačun",
+    businessFormationDescription: "Savjetovanje i pomoć oko uvođenja eRačuna u Vaše poslovanje.",
     
-    administrativeServices: "Administrativne usluge",
-    administrativeDescription: "Potpuna administrativna podrška za pojednostavljenje poslovnih operacija. Efikasno rješavamo papirologiju, usklađenost i administrativne zadatke.",
+    administrativeServices: "Administrativni poslovi",
+    administrativeDescription: "Izrada i slanje računa, pisanje dopisa, vođenje različitih evidencija (podaci o radnicima, o zalihama robe i slično).",
     
     learnMore: "Saznajte više",
     getStartedToday: "Počnite danas",
@@ -47,9 +46,11 @@ export const translations = {
     aboutCompany: "O našoj tvrtki",
     aboutUs: "O nama",
     aboutDescription: "Mi smo digitalna računovodstvena tvrtka koja radi bezpapirno i bez komplikacija. Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
-    aboutText1: "Mi smo digitalna računovodstvena tvrtka. Radimo bezpapirno i bez komplikacija.",
-    aboutText2: "Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
-    aboutText3: "Naš tim se sastoji od zaposlenika s raznolikim znanjem, vještinama i godinama iskustva.",
+    aboutText1: "Mi smo digitalni računovodstveni ured. Radimo bez papira i bez kompliciranja.",
+    aboutText2: "S klijentima surađujemo na jednostavan način.",
+    aboutText3: "Naš tim čini nekoliko djelatnika različitih znanja, vještina i godina iskustva s iskustvom rada u Synesisu, Wandu, Pantheonu i Kiposu.",
+    aboutText4: "Svojim klijentima nastojimo olakšati poslovanje na način da papirnato poslovanje zamijene digitalnim.",
+    aboutText5: "Komuniciramo razumljivim jezikom",
     
     digitalFirst: "Digitalno prvo",
     digitalFirstDesc: "Potpuno bezpapirno poslovanje za maksimalnu efikasnost",
@@ -63,9 +64,11 @@ export const translations = {
     yearsExperience: "Godina iskustva",
     
     // Careers section
-    careers: 'Karijere',
+    careers: 'Zapošljavanje',
     joinOurTeam: 'Pridružite se našem timu',
-    careersDescription: 'Ako biste željeli raditi s nama, pošaljite nam otvorenu prijavu za posao s razlogom zašto se želite pridružiti našem timu, zajedno sa svojim CV-om. Dobit ćete brz odgovor.',
+    careersDescription: 'Ako bi željeli raditi kod nas, pošaljite nam otvorenu molbu za posao sa razlogom zašto biste željeli postati dio našeg tima, zajedno s Vašim životopisom. U mogućnosti smo ponuditi posao na puno ili nepuno radno vrijeme, ovisno o trenutnom opsegu poslovanja.',
+    careersDescription2: 'Ako ste zainteresirani za obavljanje studentske prakse i upoznavanje s računovodstvenim poslovima, budite slobodni poslati nam svoju zamolbu i životopis.',
+    careersDescription3: 'Na svaku zamolbu šaljemo povratni odgovor.',
     applyNow: 'Prijavite se sada',
     contactUs: 'Kontaktirajte nas',
     whyJoinUs: 'Zašto se pridružiti nama?',
@@ -85,7 +88,7 @@ export const translations = {
     // Contact Section
     getInTouchSection: "Kontaktirajte nas",
     contactUs: "Kontakt",
-    contactDescription: "Kontaktirajte naš tim za profesionalne računovodstvene usluge",
+    contactDescription: "Kontaktirajte nas na jedan od sljedećih načina:",
     
     fullName: "Ime i prezime",
     email: "Email",
@@ -100,6 +103,16 @@ export const translations = {
     yourEmail: "vaša.email@primjer.com",
     tellUsNeeds: "Recite nam o vašim računovodstvenim potrebama...",
     captchaVerification: "Nisam robot (CAPTCHA provjera)",
+    
+    // Legal Information
+    legalData: "PRAVNI PODACI",
+    companyName: "Numerics Co. d.o.o. za usluge",
+    companyAddress: "Međimurska ulica 19",
+    companyCity: "42000 Varaždin",
+    companyOIB: "OIB: 04515646687",
+    companyRegistry: "Društvo je upisano u registar Trgovačkog suda u Varaždinu.",
+    companyCapital: "Temeljni kapital iznosi 2.650 eura i uplaćen je u cijelosti.",
+    companyIBAN: "Broj žiro računa (IBAN): HR1724020061101114525, otvoren u Erste&Steiermärkische banci d.d.",
     
     // Footer
     companyInformation: 'Informacije o tvrtki',
@@ -174,8 +187,10 @@ export const translations = {
     aboutUs: "About Us",
     aboutDescription: "We are a digital accounting office that works paperless and without complications. We cooperate with clients in a simple way and speak in understandable terms.",
     aboutText1: "We are a digital accounting office. We work paperless and without complications.",
-    aboutText2: "We cooperate with clients in a simple way and speak in understandable terms.",
-    aboutText3: "Our team consists of employees with diverse knowledge, skills, and years of experience.",
+    aboutText2: "We cooperate with clients in a simple way.",
+    aboutText3: "Our team consists of several employees with diverse knowledge, skills, and years of experience working with Synesys, Wand, Pantheon, and Kipos.",
+    aboutText4: "We strive to make business easier for our clients by replacing paper-based operations with digital ones.",
+    aboutText5: "We communicate in understandable language",
     
     digitalFirst: "Digital First",
     digitalFirstDesc: "Fully paperless operations for maximum efficiency",
@@ -191,7 +206,9 @@ export const translations = {
     // Careers Section
     joinOurTeam: "Join Our Team",
     careers: "Careers",
-    careersDescription: "If you would like to work with us, send us an open job application with the reason why you would like to join our team, together with your CV. You will receive a quick response.",
+    careersDescription: "If you would like to work with us, send us an open job application with the reason why you would like to become part of our team, together with your CV. We are able to offer full-time or part-time employment, depending on the current scope of business.",
+    careersDescription2: "If you are interested in doing a student internship and getting acquainted with accounting work, feel free to send us your application and CV.",
+    careersDescription3: "We send a response to every application.",
     sendApplication: "Send Application",
     contactUsFirst: "Contact Us First",
     whyJoinUs: "Why join us?",
@@ -210,7 +227,7 @@ export const translations = {
     // Contact Section
     getInTouchSection: "Get In Touch",
     contactUs: "Contact Us",
-    contactDescription: "Get in touch with our team for professional accounting services",
+    contactDescription: "Contact us in one of the following ways:",
     
     fullName: "Full Name",
     email: "Email",
@@ -225,6 +242,16 @@ export const translations = {
     yourEmail: "your.email@example.com",
     tellUsNeeds: "Tell us about your accounting needs...",
     captchaVerification: "I'm not a robot (CAPTCHA verification)",
+    
+    // Legal Information
+    legalData: "LEGAL INFORMATION",
+    companyName: "Numerics Co. d.o.o. za usluge",
+    companyAddress: "Međimurska ulica 19",
+    companyCity: "42000 Varaždin",
+    companyOIB: "OIB: 04515646687",
+    companyRegistry: "The company is registered in the register of the Commercial Court in Varaždin.",
+    companyCapital: "Share capital amounts to 2,650 euros and is paid in full.",
+    companyIBAN: "Bank account number (IBAN): HR1724020061101114525, opened at Erste&Steiermärkische Bank d.d.",
     
     // Footer
     companyInformation: "Company Information",
