@@ -84,17 +84,16 @@ export default function Hero() {
           </motion.h1>
 
           {/* Enhanced Subtitle */}
-          <motion.p 
-            className="text-xl md:text-2xl text-emerald-100 mb-12 max-w-4xl mx-auto leading-relaxed"
+          <motion.div 
+            className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed space-y-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            {t('heroSubtitle')}{' '}
-            <span className="text-emerald-400 font-semibold">
-              {t('heroDescription')}
-            </span>
-          </motion.p>
+            <p className="text-white">{t('heroSubtitle')}</p>
+            <p className="text-emerald-400 font-semibold">{t('heroDescription2')}</p>
+            <p className="text-white">{t('heroDescription3')}</p>
+          </motion.div>
 
           {/* Enhanced CTA Buttons */}
           <motion.div 

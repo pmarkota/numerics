@@ -177,8 +177,8 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Enhanced Contact Information */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Enhanced Contact Information and Map */}
           <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -30 }}
@@ -225,34 +225,13 @@ export default function Contact() {
               })}
             </div>
 
-
-            {/* Legal Information Card */}
-            <motion.div 
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-lg"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
-              <h3 className="text-xl font-bold text-emerald-400 mb-6">{t('legalData')}</h3>
-              <div className="space-y-3 text-white">
-                <p className="font-semibold">{t('companyName')}</p>
-                <p>{t('companyAddress')}</p>
-                <p>{t('companyCity')}</p>
-                <p className="text-emerald-100">{t('companyOIB')}</p>
-                <p className="text-emerald-100 leading-relaxed">{t('companyRegistry')}</p>
-                <p className="text-emerald-100 leading-relaxed">{t('companyCapital')}</p>
-                <p className="text-emerald-100 leading-relaxed break-all">{t('companyIBAN')}</p>
-              </div>
-            </motion.div>
-
             {/* Enhanced Google Maps Embed */}
             <motion.div 
               className="relative bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.6 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
             >
               <div className="p-4 bg-white/5 border-b border-white/20">
                 <div className="flex items-center space-x-3">

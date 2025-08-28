@@ -108,15 +108,6 @@ export default function Services() {
             </span>
           </motion.h2>
           
-          <motion.p 
-            className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-          >
-            {t('servicesDescription')}
-          </motion.p>
         </motion.div>
 
         {/* Premium Services Grid */}
@@ -148,10 +139,10 @@ export default function Services() {
 
                 {/* Content */}
                 <div className="relative z-10 flex-grow flex flex-col">
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-emerald-100 transition-colors">
+                  <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-emerald-100 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-emerald-100 leading-relaxed group-hover:text-white transition-colors flex-grow">
+                  <p className="text-lg text-emerald-100 leading-relaxed group-hover:text-white transition-colors flex-grow">
                     {service.description}
                   </p>
                 </div>

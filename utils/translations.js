@@ -11,7 +11,8 @@ export const translations = {
     // Hero Section
     digitalAccounting: "Digitalno računovodstvo",
     heroSubtitle: "Knjigovodstvo bez papira i bez kompliciranja.",
-    heroDescription: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja. Fiskalizacija 2.0 i eRačun – savjetovanje i pomoć oko uvođenja u Vaše poslovanje. ",
+    heroDescription2: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja.",
+    heroDescription3: "Fiskalizacija 2.0 i eRačun – savjetovanje i pomoć oko uvođenja u Vaše poslovanje.",
     exploreServices: "Usluge koje nudimo",
     getInTouch: "Kontaktirajte nas",
     
@@ -22,7 +23,7 @@ export const translations = {
     
     // Services Section
     professionalServices: "Profesionalne usluge",
-    ourServices: "Naše usluge",
+    ourServices: "Usluge koje nudimo",
     servicesDescription: "Pružamo sveobuhvatne računovodstvene i poslovne usluge kako bismo pomogli vašoj tvrtki da napreduje u digitalnom dobu.",
     accountingBookkeeping: 'Knjigovodstvo i računovodstvo',
     accountingDescription: 'Knjigovodstvena obrada sve poslovne dokumentacije. Računovodstveno izvještavanje i analiza Vaših brojeva.',
@@ -123,6 +124,9 @@ export const translations = {
     courtRegistryInfo: 'Informacije sudskog registra',
     shareCapital: 'Temeljni kapital: €2,650 (potpuno uplaćen)',
     digitalAccountingSolutions: "Digitalna računovodstvena rješenja",
+    footerLegalLine1: "Numerics Co. d.o.o. za usluge, Međimurska ulica 19, 42000 Varaždin, OIB 04515646687",
+    footerLegalLine2: "Društvo je upisano u registar Trgovačkog suda u Varaždinu. Temeljni kapital iznosi 2.650 eura i uplaćen je u cijelosti.",
+    footerLegalLine3: "Broj žiro računa (IBAN): HR1724020061101114525, otvoren u Erste&Steiermärkische banci d.d.",
     
     // Map
     interactiveMapSoon: "Interaktivna karta uskoro",
@@ -152,7 +156,8 @@ export const translations = {
     // Hero Section
     digitalAccounting: "Digital Accounting",
     heroSubtitle: "Paperless and uncomplicated bookkeeping.",
-    heroDescription: "Streamline your business with our modern accounting solutions.",
+    heroDescription2: "For companies, crafts, non-profit organizations and freelancers.",
+    heroDescription3: "Streamline your business with our modern accounting solutions.",
     exploreServices: "Explore Services",
     getInTouch: "Get in Touch",
     
@@ -262,6 +267,9 @@ export const translations = {
     digitalAccountingSolutions: "Digital Accounting Solutions",
     courtRegistryInfo: "Court Registry Information",
     shareCapital: "Share Capital: €2,650 (fully paid)",
+    footerLegalLine1: "Numerics Co. d.o.o. za usluge, Međimurska ulica 19, 42000 Varaždin, OIB 04515646687",
+    footerLegalLine2: "The company is registered in the register of the Commercial Court in Varaždin. Share capital amounts to 2,650 euros and is paid in full.",
+    footerLegalLine3: "Bank account number (IBAN): HR1724020061101114525, opened at Erste&Steiermärkische Bank d.d.",
     
     // Map
     interactiveMapSoon: "Interactive Map Coming Soon",

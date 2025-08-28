@@ -30,16 +30,6 @@ export default function About() {
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
             {t('aboutUs')}
           </h2>
-          
-          <motion.p 
-            className="text-xl text-emerald-100 max-w-4xl mx-auto leading-relaxed mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            {t('aboutDescription')}
-          </motion.p>
         </motion.div>
 
         {/* Main Content Card */}
