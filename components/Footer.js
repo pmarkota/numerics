@@ -32,10 +32,10 @@ export default function Footer() {
         }}></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Enhanced Logo Section */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function Footer() {
 
         {/* Legal Information - 3 Rows Centered */}
         <motion.div 
-          className="text-center mb-16 max-w-4xl mx-auto"
+          className="text-center mb-6 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
