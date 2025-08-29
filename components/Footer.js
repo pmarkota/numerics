@@ -64,7 +64,7 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.6 }}
         >
-          <div className="space-y-3">
+          <div className="space-y-1">
             <p className="text-gray-400 text-sm leading-relaxed">
               {t('footerLegalLine1')}
             </p>
