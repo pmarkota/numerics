@@ -10,7 +10,7 @@ export const translations = {
 
     // Hero Section
     digitalAccounting: "Digitalno računovodstvo",
-    heroSubtitle: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja.",
+    heroSubtitle: "Knjigovodstvo bez papira na jednostavan i razumljiv način.",
     heroDescription2: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja.",
     heroDescription3: "Savjetujemo u vezi eRačuna i Fiskalizacije 2.0.",
     exploreServices: "Usluge koje nudimo",
