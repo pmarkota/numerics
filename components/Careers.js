@@ -60,7 +60,7 @@ export default function Careers() {
                 </motion.p>
                 
                 <motion.p 
-                  className="text-xl text-emerald-900 font-semibold leading-relaxed text-center"
+                  className="text-xl text-emerald-900 leading-relaxed text-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

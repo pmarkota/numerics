@@ -10,9 +10,9 @@ export const translations = {
     
     // Hero Section
     digitalAccounting: "Digitalno računovodstvo",
-    heroSubtitle: "Knjigovodstvo bez papira i bez kompliciranja.",
+    heroSubtitle: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja.",
     heroDescription2: "Za poduzeća, obrte, neprofitne organizacije i slobodna zanimanja.",
-    heroDescription3: "Fiskalizacija 2.0 i eRačun – savjetovanje i pomoć oko uvođenja u Vaše poslovanje.",
+    heroDescription3: "Savjetujemo u vezi eRačuna i Fiskalizacije 2.0.",
     exploreServices: "Usluge koje nudimo",
     getInTouch: "Kontaktirajte nas",
     
@@ -26,19 +26,19 @@ export const translations = {
     ourServices: "Usluge koje nudimo",
     servicesDescription: "Pružamo sveobuhvatne računovodstvene i poslovne usluge kako bismo pomogli vašoj tvrtki da napreduje u digitalnom dobu.",
     accountingBookkeeping: 'Knjigovodstvo i računovodstvo',
-    accountingDescription: 'Knjigovodstvena obrada sve poslovne dokumentacije. Računovodstveno izvještavanje i analiza Vaših brojeva.',
+    accountingDescription: 'Naš posao je knjigovodstveno-računovodstvena obrada sve poslovne dokumentacije te izrada i predaja zakonskih izvještaja prema Poreznoj upravi, FINA-i i ostalim institucijama. Ovaj dio poslovanja obuhvaća uobičajene poslove poput knjiženja poslovnih događaja, obračuna plaća, PDV-a te izrade financijskih izvještaja.',
     taxConsulting: 'Porezno Savjetovanje',
     taxDescription: 'Stručno porezno planiranje i savjetovanje za optimizaciju vaših poreznih obveza.',
-    businessConsulting: 'Poslovno Savjetovanje',
-    businessConsultingDescription: 'Otvaranje i zatvaranje poduzeća ili obrta. Analiza i unaprijeđenje poslovnih procesa. Financijsko savjetovanje.',
+    businessConsulting: 'Vanjski uvid ili provjera knjiženja postojećeg knjigovodstvenog servisa',
+    businessConsultingDescription: 'Ako nemate povjerenja u rad postojećeg knjigovodstvenog servisa, možemo napraviti neovisnu provjeru načina rada tog servisa, odnosno provjeriti ažurnost, ispravnost i točnost knjiženja poslovnih događaja i sastavljanja financijskih izvještaja.',
     learnMore: 'Saznaj više',
     readyToStart: 'Spremni za početak?',
     
-    businessFormation: "Fiskalizacija 2.0 i eRačun",
-    businessFormationDescription: "Savjetovanje i pomoć oko uvođenja eRačuna u Vaše poslovanje.",
+    businessFormation: "Poslovno savjetovanje",
+    businessFormationDescription: "Pored upisivanja podataka u računalo i generiranja izvještaja, knjigovodstvo je usko povezano s praćenjem vašeg poslovanja i savjetovanjem na koji način ispravno riješiti neki problem za postizanje cilja, i pri tome biti usklađen sa svim relevantnim zakonima i propisima. Osim toga, pomažemo kod otvaranja, zatvaranja ili preuzimanja poduzeća ili obrta, a sve klijente pripremamo za uvođenje eRačuna i Fiskalizaciju 2.0.",
     
     administrativeServices: "Administrativni poslovi",
-    administrativeDescription: "Izrada i slanje računa, pisanje dopisa, vođenje različitih evidencija (podaci o radnicima, o zalihama robe i slično).",
+    administrativeDescription: "Bavimo se i povezanim administrativnim poslovima kao što je izrada i slanje računa ili ponuda, vođenje platnog prometa, sastavljanje i predaja Intrastat izvještaja ili izvještaja za banke, pisanje dopisa, vođenje različitih evidencija i slično.",
     
     learnMore: "Saznajte više",
     getStartedToday: "Počnite danas",
@@ -46,12 +46,11 @@ export const translations = {
     // About Section
     aboutCompany: "O našoj tvrtki",
     aboutUs: "O nama",
-    aboutDescription: "Mi smo digitalna računovodstvena tvrtka koja radi bezpapirno i bez komplikacija. Surađujemo s klijentima na jednostavan način i govorimo razumljivim jezikom.",
-    aboutText1: "Mi smo digitalni računovodstveni ured. Radimo bez papira i bez kompliciranja.",
-    aboutText2: "S klijentima surađujemo na jednostavan način.",
-    aboutText3: "Naš tim čini nekoliko djelatnika različitih znanja, vještina i godina iskustva s iskustvom rada u Synesisu, Wandu, Pantheonu i Kiposu.",
-    aboutText4: "Svojim klijentima nastojimo olakšati poslovanje na način da papirnato poslovanje zamijene digitalnim.",
-    aboutText5: "Komuniciramo razumljivim jezikom",
+    aboutDescription: "Mi smo Numerics, digitalni računovodstveni ured. Nastojimo raditi sa što manje papira, a to znači da svu dokumentaciju izrađujemo i razmjenjujemo elektroničkim putem.",
+    aboutText1: "Mi smo Numerics, digitalni računovodstveni ured. Nastojimo raditi sa što manje papira, a to znači da svu dokumentaciju izrađujemo i razmjenjujemo elektroničkim putem.",
+    aboutText2: "S klijentima komuniciramo jednostavno i razumljivo, pratimo njihovo poslovanje te ih educiramo odnosno usmjeravamo na koji način ispravno i u skladu sa zakonima riješiti neki problem, odnosno postići cilj koji žele. Ovakvim načinom rada gradimo međusobno povjerenje koje je ključ uspješne i zadovoljne suradnje.",
+    aboutText3: "Naš tim sastoji se od zaposlenika različitih razina znanja i vještina. Poznajemo rad u računovodstvenim programima Synesis, Wand, Pantheon i Kipos, a visoka informatička pismenost svih naših zaposlenika pridonosi ažurnom, točnom i efikasnom obavljanju posla. Redovito se educiramo u području računovodstva i financija. Surađujemo s klijentima iz engleskog govornog područja.",
+    aboutText4: "Svojim partnerima nastojimo olakšati poslovanje pristupajući im osobno i profesionalno te pomažući da papirnato poslovanje zamijene digitalnim.",
     
     digitalFirst: "Digitalno prvo",
     digitalFirstDesc: "Potpuno bezpapirno poslovanje za maksimalnu efikasnost",
@@ -67,7 +66,7 @@ export const translations = {
     // Careers section
     careers: 'Zapošljavanje',
     joinOurTeam: 'Pridružite se našem timu',
-    careersDescription: 'Ako bi željeli raditi kod nas, pošaljite nam otvorenu molbu za posao sa razlogom zašto biste željeli postati dio našeg tima, zajedno s Vašim životopisom. U mogućnosti smo ponuditi posao na puno ili nepuno radno vrijeme, ovisno o trenutnom opsegu poslovanja.',
+    careersDescription: 'Ako bi željeli raditi kod nas, pošaljite nam otvorenu molbu za posao s razlogom zašto biste željeli postati dio našeg tima, zajedno s Vašim životopisom. Možemo vam ponuditi posao na puno ili nepuno radno vrijeme, ovisno o trenutačnom opsegu poslovanja.',
     careersDescription2: 'Ako ste zainteresirani za obavljanje studentske prakse i upoznavanje s računovodstvenim poslovima, budite slobodni poslati nam svoju zamolbu i životopis.',
     careersDescription3: 'Na svaku zamolbu šaljemo povratni odgovor.',
     applyNow: 'Prijavite se sada',
@@ -155,9 +154,9 @@ export const translations = {
     
     // Hero Section
     digitalAccounting: "Digital Accounting",
-    heroSubtitle: "Paperless and uncomplicated bookkeeping.",
+    heroSubtitle: "Paperless accounting in a simple and understandable way.",
     heroDescription2: "For companies, crafts, non-profit organizations and freelancers.",
-    heroDescription3: "Streamline your business with our modern accounting solutions.",
+    heroDescription3: "We advise on eInvoices and Fiscalization 2.0.",
     exploreServices: "Explore Services",
     getInTouch: "Get in Touch",
     
@@ -171,17 +170,17 @@ export const translations = {
     ourServices: "Our Services",
     servicesDescription: "We provide comprehensive accounting and business services to help your company thrive in the digital age.",
     
-    accountingBookkeeping: "Accounting & Bookkeeping",
-    accountingDescription: "Comprehensive financial record keeping and accounting services tailored to your business needs. We handle all aspects of bookkeeping with precision and attention to detail.",
+    accountingBookkeeping: "Bookkeeping and Accounting",
+    accountingDescription: "Our job is to process all business documentation and prepare and submit legal reports to the Tax Administration, FINA and other institutions. This part of the business includes common tasks such as recording business transactions, calculating salaries, VAT and preparing financial reports.",
     
-    businessFormation: "Business & Company Formation",
-    businessFormationDescription: "Expert guidance through the process of establishing your business entity. We assist with all legal requirements and documentation for company formation.",
+    businessFormation: "Business Consulting",
+    businessFormationDescription: "In addition to entering data into a computer and generating reports, bookkeeping is closely related to monitoring your business and advising on how to properly solve a problem to achieve your goal, while complying with all relevant laws and regulations. We assist with opening, closing or taking over a company, and we prepare all clients for the introduction of eInvoices and Fiscalization 2.0.",
     
-    businessConsulting: "Business Consulting",
-    businessConsultingDescription: "Strategic business advice and consulting services to help your company grow and optimize operations. Our experienced team provides valuable insights.",
+    businessConsulting: "External review of the existing accounting service",
+    businessConsultingDescription: "If you have no trust in the work of an existing accounting service, we can conduct an independent verification of the way that service works, i.e. check the timeliness, correctness and accuracy of the accounting of business transactions and the preparation of financial reports.",
     
-    administrativeServices: "Administrative Services",
-    administrativeDescription: "Complete administrative support to streamline your business operations. We handle paperwork, compliance, and administrative tasks efficiently.",
+    administrativeServices: "Administrative tasks",
+    administrativeDescription: "We also deal with related administrative tasks such as creating and sending invoices or offers, managing payment transactions, compiling and submitting Intrastat reports or reports for banks, writing letters, keeping various records and the like.",
     
     learnMore: "Learn More",
     getStartedToday: "Get Started Today",
@@ -191,10 +190,10 @@ export const translations = {
     aboutCompany: "About Our Company",
     aboutUs: "About Us",
     aboutDescription: "We are a digital accounting office that works paperless and without complications. We cooperate with clients in a simple way and speak in understandable terms.",
-    aboutText1: "We are a digital accounting office. We work paperless and without complications.",
-    aboutText2: "We cooperate with clients in a simple way.",
-    aboutText3: "Our team consists of several employees with diverse knowledge, skills, and years of experience working with Synesys, Wand, Pantheon, and Kipos.",
-    aboutText4: "We strive to make business easier for our clients by replacing paper-based operations with digital ones.",
+    aboutText1: "We are Numerics, a digital accounting office. We strive to work with as little paper as possible, which means that we create and exchange all documentation electronically.",
+    aboutText2: "We communicate with our clients in a simple and understandable way, monitor their business and educate or guide them on how to properly and legally solve a problem or achieve the goal they want. This way of working builds mutual trust, which is the key to successful and satisfying cooperation.",
+    aboutText3: "Our team consists of employees with different levels of knowledge and skills. We are familiar with working in the accounting programs Synesis, Wand, Pantheon and Kipos, and the high level of IT literacy of all our employees contributes to the timely, accurate and efficient performance of work. We regularly educate ourselves in the field of accounting and finance and cooperate with clients from English-speaking countries.",
+    aboutText4: "We strive to make business easier for our partners by approaching them personally and professionally, and helping them replace paper-based business with digital ones.",
     aboutText5: "We communicate in understandable language",
     
     digitalFirst: "Digital First",
@@ -211,9 +210,9 @@ export const translations = {
     // Careers Section
     joinOurTeam: "Join Our Team",
     careers: "Careers",
-    careersDescription: "If you would like to work with us, send us an open job application with the reason why you would like to become part of our team, together with your CV. We are able to offer full-time or part-time employment, depending on the current scope of business.",
-    careersDescription2: "If you are interested in doing a student internship and getting acquainted with accounting work, feel free to send us your application and CV.",
-    careersDescription3: "We send a response to every application.",
+    careersDescription: "If you would like to work with us, please send us an open application for a job stating why you would like to join our team, along with your CV. We can offer you a full-time or part-time position, depending on the current volume of business.",
+    careersDescription2: "If you are interested in doing a student internship and getting to know accounting, please feel free to send us your application and CV.",
+    careersDescription3: "We respond to every application.",
     sendApplication: "Send Application",
     contactUsFirst: "Contact Us First",
     whyJoinUs: "Why join us?",

@@ -142,7 +142,7 @@ export default function Contact() {
     {
       icon: MapPin,
       label: t('address'),
-      value: "Međimurska ulica 19\n42000 Varaždin, Croatia",
+      value: "Međimurska ulica 19\n42000 Varaždin, Hrvatska",
       href: null,
       gradient: "from-teal-500 to-emerald-500"
     }

@@ -82,15 +82,6 @@ export default function About() {
                 {t('aboutText4')}
               </motion.p>
               
-              <motion.p 
-                className="text-xl text-white leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-              >
-                {t('aboutText5')}
-              </motion.p>
             </div>
           </div>
         </motion.div>
