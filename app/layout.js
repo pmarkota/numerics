@@ -1,15 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from '../contexts/LanguageContext';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  fallback: ["system-ui", "arial"],
 });
 
 export const metadata = {
@@ -31,7 +28,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://numerics.hr" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
